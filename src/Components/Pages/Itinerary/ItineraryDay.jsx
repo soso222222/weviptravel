@@ -24,7 +24,7 @@ function ItineraryDay({
 
     return (
         <Box>
-            <Title title={getLangTextsWithType(lang, "itinerary", "")} />
+            <Title title={getLangTextsWithType(lang, "itinerary", "")} titleSize={30} />
             {dayKeys.map(day => (
                 <ItineraryDetail key={day} list={groupedItinerary} day={day} lang={lang} />
             ))}

@@ -9,11 +9,12 @@ import { onToggleActive } from "../../../../../features/menuSlice";
 function TopMenu() {
     const dispatch = useDispatch();
     const onToggleMenu = () => dispatch(onToggleActive());
+    const menus = menuDeafult?.filter((i) => !i?.isHidden);
 
     return (
         <Nav>
             <ItemBox className={"ItemBox"}>
-                {menuDeafult.map(({url, title}, idx) => (
+                {menus.map(({url, title}, idx) => (
                     <Item key={idx}><Link to={url}>{title}</Link></Item>
                 ))}
             </ItemBox>

@@ -6,13 +6,12 @@ const mediaScreenWidth = theme.deviceSizes.tabletL;
 export const Wrapper = styled.div`
   display: grid;
   flex-direction: column;
-  gap: 10%;
+  gap: 6%;
   padding: 100rem 11%;
   font-weight: 300;
 
   @media screen and (max-width: ${mediaScreenWidth}) {
     // padding: 80rem 4%;
-    padding: 80rem 0;
   }
 `;
 
@@ -72,7 +71,7 @@ export const ItineraryDayTop = styled.a`
   gap: 20rem;
   align-items: center;
   justify-content: center;
-  padding: 14rem 4rem;
+  padding: 0 4rem 24rem 4rem;
   cursor: pointer;
 `;
 
@@ -85,8 +84,8 @@ export const ItineraryDayBottom = styled.div`
 
 export const ItineraryDayContent = styled.div`
   display: grid;
-  grid-template-columns: 1fr 9fr;
-  gap: 20rem;
+  grid-template-columns: 70rem 1fr;
+  gap: 30rem 20rem;
   align-items: center;
   justify-content: center;
 `;
@@ -95,4 +94,15 @@ export const ItineraryDayContent = styled.div`
 export const ItineraryMapDot = styled.div`
   display: flex;
   justify-content: center;
+`;
+
+export const ItineraryDetailImageContainer = styled.div`
+  // display: grid;
+  // grid-template-columns: repeat(3, minmax(20%, auto));
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: 1fr;
+  justify-content: center;
+  grid-column: 2 / 3;
+  width: 900rem;
+  // gap: 20rem;
 `;

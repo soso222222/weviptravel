@@ -51,7 +51,7 @@ export const Itineraryinfo = [
         departureTime: "", //출발시간
         travelDuration: "", //이동시간
         stayTime: "", //머무는시간
-        Images: ["", ""],
+        images: [],
       },
       {
         day: "1", //일차
@@ -72,13 +72,13 @@ export const Itineraryinfo = [
         departureTime: "", //출발시간
         travelDuration: "", //이동시간
         stayTime: "", //머무는시간
-        Images: ["", ""],
+        images: [],
       },
       {
         day: "1", //일차
         title: {
-          kor: "삼겹살",
-          eng: "Korean BBQ",
+          kor: "흑돼지",
+          eng: "Black Pork",
         },
         text: {
           kor: "",
@@ -93,7 +93,10 @@ export const Itineraryinfo = [
         departureTime: "", //출발시간
         travelDuration: "", //이동시간
         stayTime: "", //머무는시간
-        Images: ["", ""],
+        images: [
+          "itinerary1/jeju1-1.bmp",
+          "itinerary1/jeju1-2.bmp",
+        ],
       },
       {
         day: "2", //일차
@@ -114,7 +117,7 @@ export const Itineraryinfo = [
         departureTime: "", //출발시간
         travelDuration: "", //이동시간
         stayTime: "", //머무는시간
-        Images: ["", ""],
+        images: [],
       },
     ],
   },
